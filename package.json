@@ -1,0 +1,10 @@
+{
+  "name": "shipment-handoff-room",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22.18"},
+  "scripts": {"start": "node src/shipment_service.ts", "test": "node --test test/shipment_decision.test.ts", "typecheck": "tsc --noEmit", "demo": "node src/handoff_demo.ts"},
+  "dependencies": {"zod": "^3.24.2"},
+  "devDependencies": {"@types/node": "^22.10.0", "typescript": "^5.7.3"}
+}

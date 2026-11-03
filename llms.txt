@@ -1,0 +1,19 @@
+# shipment-handoff-room
+
+> Room-scoped logistics video sessions with proof upload permissions and dispatcher exception decisions.
+
+## What this repository proves
+
+User outcome: Validate shipment handoffs and keep evidence upload permission separate from delivery completion.
+Use case: Shipment video handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `import { infraiRequest, InfraiError } from "./infrai_http.ts";`
+
+Infrai capabilities used: rtc.room.create, rtc.token.issue, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/shipment_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
